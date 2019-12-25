@@ -9,21 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>pinyougou-cloud-common</artifactId>
-    <description>通用模块</description>
-
+    <artifactId>pinyougou-cloud-eureka-7001</artifactId>
+    <description>eureka server 7001</description>
     <dependencies>
-
-        <dependency>
-            <groupId>com.xt.pinyougou</groupId>
-            <artifactId>pinyougou-cloud-pojo</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
-        <!-- Feign 负载均衡 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
     </dependencies>
 

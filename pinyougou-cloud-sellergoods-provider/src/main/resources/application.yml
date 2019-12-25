@@ -7,6 +7,8 @@ spring:
     password: root
     url: jdbc:mysql:///pinyougoudb?useSSL=false
     driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: pinyougou-cloud-sellergoods-provider
 
 mybatis-plus:
   global-config:
@@ -17,4 +19,21 @@ mybatis-plus:
       logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 打印 sql
+
+
+eureka:
+  client: # 客户端注册进 eureka 服务列表内
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+  instance:
+    instance-id: sellergoods-provider
+    prefer-ip-address: true # 访问路径可以显示IP地址
+
+info:
+  app.name: pinyougou-springcloud
+  company.name: www.xt.com
+  build.artifactId: pinyougou-cloud-sellergoods-provider
+  build.version: ${project.version} # 取不到值
+
+#debug: true
 
