@@ -15,7 +15,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <mp.version>3.2.0</mp.version>
-        <swagger2.version>2.9.2</swagger2.version>
+        <swagger2.version>2.10.0</swagger2.version>
         <mysql.version>8.0.15</mysql.version>
         <guava.version>20.0</guava.version>
     </properties>
